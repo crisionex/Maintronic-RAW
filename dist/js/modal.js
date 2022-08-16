@@ -83,9 +83,9 @@ function sendInfo(id) {
 
 function addEquipment() {
   $(document).ready(function () {
-    var num_inv = document.getElementById("nigger1").value;
+    var num_inv = document.getElementById("xzy1").value;
     console.log(num_inv);
-    var nom_eq = document.getElementById("nigger2").value;
+    var nom_eq = document.getElementById("xzy2").value;
     $.ajax({
       url: "query/addeq.php",
       method: "POST",
