@@ -1,0 +1,169 @@
+h3 {
+  font-family: "poppins", sans-serif !important;
+}
+/* Estilizado layout contenido main */
+.main-content {
+  overflow-y: scroll;
+  display: grid;
+  grid-auto-columns: 1fr;
+  color: var(--text-color-titles);
+  gap: 3vh;
+  grid-template-areas:
+    "titulo titulo"
+    "table-1 form-report";
+}
+
+.main-content .Main-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-content .theme-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  background-color: var(--grey-dark-color);
+  border-radius: 25px;
+  box-shadow: var(--box-shadow-color);
+}
+
+.main-content .theme-mode span {
+  padding: 1vw;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--light-color);
+}
+
+.main-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.main-content h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.main-content-grid:nth-child(1) {
+  grid-area: titulo;
+}
+.main-content-grid:nth-child(2) {
+  grid-area: table-1;
+}
+.main-content-grid:nth-last-child() {
+  grid-area: form-report;
+}
+
+.form-report form {
+  padding: 2vh;
+  background-color: var(--card-color);
+  box-shadow: var(--box-shadow-color);
+  border-radius: 25px;
+  font-family: "Fredoka", sans-serif;
+}
+
+.form-report .form-group {
+  display: block;
+}
+
+select {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 8px;
+  width: calc(100% - 10px);
+  background-color: var(--input-elements-color);
+  border: 0;
+  border-bottom: 1px solid var(--grey-line-color);
+  color: var(--text-color-titles);
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  border-bottom: 2px solid var(--grey-dark-color);
+}
+
+input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 8px;
+  width: calc(100% - 10px);
+  background-color: var(--input-elements-color);
+  border: 0;
+  border-bottom: 2px solid var(--grey-dark-color);
+  color: var(--text-color-titles);
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+}
+
+textarea {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 8px;
+  width: calc(100% - 10px);
+  background-color: var(--input-elements-color);
+  border: 0;
+  color: var(--text-color-titles);
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  resize: none;
+}
+
+.tabla-datos {
+  justify-content: center;
+  background-color: var(--card-color);
+  box-shadow: var(--box-shadow-color);
+  border-radius: 15px;
+  padding: 2vw;
+}
+
+.tabla-datos .table-1 {
+  border-collapse: collapse;
+  position: relative;
+  width: 100%;
+  padding: 1vw;
+  font-family: "radio canada", sans-serif;
+}
+
+.table-1 tbody tr {
+  font-size: 1rem;
+  border-bottom: 1px solid var(--grey-line-color);
+  font-size: 1.1rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+}
+
+.table-1 thead th {
+  font-size: 1.1rem;
+  padding-bottom: 2vh;
+}
+
+.table-1 tbody tr td {
+  padding: 1vh;
+  padding-bottom: 4vh;
+  text-align: center;
+  align-self: center;
+}
+
+/* responsiveness content-grid */
+@media screen and (max-width: 768px) {
+  /* Estilizado de main-content-grid */
+  .main-content {
+    display: grid;
+    grid-auto-columns: 92vw;
+    justify-content: center;
+    gap: 3vh;
+    grid-template-areas:
+      "titulo"
+      "form-report"
+      "table-1";
+  }
+  .main-grid .main-content {
+    padding: 0;
+  }
+  .main-content .Main-title {
+    padding-top: 4vh;
+  }
+}
