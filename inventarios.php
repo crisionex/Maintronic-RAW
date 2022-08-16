@@ -161,8 +161,8 @@ if ($datosUsuario['permiso'] == 'Encargado') {
                         <h2>Estado del Equipo</h2>
                     </div>
                     <div class="modal-body">
-                        <label for="nigger">El equipo actualmente se encuentra en estado:</label><br>
-                        <select class="dropdown" name="nigger" id="nigger">
+                        <label for="xzy">El equipo actualmente se encuentra en estado:</label><br>
+                        <select class="dropdown" name="xzy" id="xzy">
                             <option value="0">Operativo</option>
                             <option value="R">Regular</option>
                             <option value="M">No operativo</option>
@@ -187,12 +187,12 @@ if ($datosUsuario['permiso'] == 'Encargado') {
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label for="nigger1">Numero de inventario</label><br>
-                            <input id="nigger1" autocomplete="off" autofill="off" autofill="off" type="text" name="num_inv" placeholder="Numero de inventario" class="form-control" required>
+                            <label for="xzy1">Numero de inventario</label><br>
+                            <input id="xzy1" autocomplete="off" autofill="off" autofill="off" type="text" name="num_inv" placeholder="Numero de inventario" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="nigger2">Descripcion del equipo</label><br>
-                            <input id="nigger2" autocomplete="off" autofill="off" autofill="off" type="text" name="nom_eq" placeholder="Descripcion del equipo" class="form-control" required>
+                            <label for="xzy2">Descripcion del equipo</label><br>
+                            <input id="xzy2" autocomplete="off" autofill="off" autofill="off" type="text" name="nom_eq" placeholder="Descripcion del equipo" class="form-control" required>
                         </div>
                     </div>
                     <div class="modal-footer">
